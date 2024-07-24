@@ -12,21 +12,27 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-warning">
     <header>
         <div class="container">
             <div class="row">
-                <div class="col text-center mt-5 bg-warning ">
-                    <h1>Campo minato js</h1>
-                    <button id="generate-grid" class="btn btn-primary mb-3">Genera Griglia</button>
+                <div class="col text-center mt-5  ">
+                    <h1>Campo minato</h1>
+
                 </div>
             </div>
-        </div>
     </header>
 
     <main>
         <div class="container text-center mt-5">
-
+            <div class="mb-3">
+                <select id="difficulty" class="custom-select w-auto d-inline-block">
+                    <option value="1">Easy (100 caselle)</option>
+                    <option value="2">Medium (81 caselle)</option>
+                    <option value="3">Hard (49 caselle)</option>
+                </select>
+                <button id="start-button" class="btn btn-dark d-inline-block">Genera Griglia</button>
+            </div>
             <div id="grid-container" class="mx-auto"></div>
         </div>
     </main>
